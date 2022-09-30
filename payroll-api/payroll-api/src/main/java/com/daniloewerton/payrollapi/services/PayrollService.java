@@ -33,7 +33,6 @@ public class PayrollService {
                         payroll.getWorkedHours() * user.getHourlyPrice()
                         );
             }
-
         } catch (FeignException.NotFound ex) {
             throw new ObjectNotFoundException("Object not found");
         } catch (Exception ex) {
